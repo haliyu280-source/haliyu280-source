@@ -1,67 +1,41 @@
-# Ali Khaleel Hassan
+Ali Khaleel Hassan
 
-**Cloud Security \| Linux & Networking \| Application Security \|
-Software Engineering**
+Cloud Security · DevSecOps · IAM · Linux
 
-Software engineer and security-focused builder with experience
-developing web applications and enterprise security technology.
-Interested in secure infrastructure, access control, application
-security, and reliable systems operations.
+Software Engineering and Business Management student (graduating 2028) focused on cloud security and infrastructure. I build security tooling end to end and test it like it's going to production: detection rules, automated tests, CI gates, hardened containers, and honest documentation of what it doesn't do yet.
 
-As Founder at **NeXLock Systems**, I work on **NEXOPS**, an enterprise
-security-operations platform. My work spans application architecture,
-APIs, databases, authentication and authorization concepts,
-integrations, and software testing. Company repositories and proprietary
-implementation details remain private.
+Looking for remote internships and entry-level roles in cloud security, cloud support, or DevSecOps.
 
-## Focus Areas
+Projects
+Overreach: AWS IAM policy analyzer and CI security gate
+Scans IAM policy JSON for overly permissive access (full admin, iam:* privilege escalation, service-wide wildcards) and ranks findings by severity
+Handles action lists and skips Deny statements to avoid false positives; pytest suite covers detections and policies that must stay clean
+Runs in GitHub Actions next to unit tests and a Trivy image scan, and blocks pull requests that add dangerous policies
+Packaged in a hardened Docker image (slim base, non-root user)
 
--   **Cloud & Infrastructure Security:** infrastructure fundamentals,
-    identity and access concepts, secure configuration, and operational
-    reliability.
--   **Linux & Networking:** command-line administration, permissions,
-    processes, logs, IP addressing, DNS, gateways, and connectivity
-    troubleshooting.
--   **Application Security:** authentication and authorization, API
-    security fundamentals, access control, and security-minded
-    application design.
--   **Software Engineering:** JavaScript, React, Node.js, PostgreSQL,
-    REST APIs, Git, and deployment workflows.
--   **Testing & Troubleshooting:** structured manual testing, issue
-    isolation, defect documentation, and clear technical notes.
+Python pytest Docker Trivy GitHub Actions AWS IAM
 
-## Selected Experience
+SentinelEye: multi-server Linux monitoring platform
+Started as a Bash health-check tool (CPU, memory, disk, uptime, processes) with thresholds, JSON output and exit codes
+Grew into an agent-based setup: agents report metrics to a FastAPI backend that evaluates health and raises alerts in a React dashboard
 
-### NeXLock Systems --- Founder & Builder
+Bash Python FastAPI React Docker Vercel
 
-Working on security technology and NEXOPS, a platform designed to
-support enterprise security operations and operational workflows.
+NEXOPS (private): security operations platform at NeXLock Systems
 
-Relevant areas include: - Web application architecture and feature
-development. - Database-backed workflows and access-control design. -
-API and third-party service integrations. - Application testing and
-troubleshooting. - Security-focused product development.
+I'm the founder of NeXLock Systems and built NEXOPS, a pre-launch security operations platform: multi-tenant data isolation with PostgreSQL Row-Level Security, role-based access control, serverless integrations, and a mobile field app. Company code stays private.
 
-### Technical Projects
-
-My company projects are proprietary. Public repositories will focus on
-independent technical demonstrations, reproducible labs, and
-documentation that can be shared without exposing company code or
-sensitive information.
-
-## Technologies
-
-`JavaScript` `React` `Node.js` `PostgreSQL` `Supabase` `REST APIs`
-`Git/GitHub` `Vercel`
-
-## Links
-
--   **LinkedIn:**
-    [linkedin.com/in/alihvss](https://www.linkedin.com/in/alihvss)
--   **Website:** [nexlockhq.com.ng](https://nexlockhq.com.ng)
--   **GitHub:**
-    [github.com/haliyu280-source](https://github.com/haliyu280-source)
-
-------------------------------------------------------------------------
-
-*Building secure, reliable systems through practical engineering.*
+Skills
+Area	Tools and concepts
+Cloud & security	AWS IAM, MFA, CloudTrail, least privilege, IAM policy analysis, container security, CI/CD security gates
+DevOps	Docker, GitHub Actions, Git (branches, pull requests), Linux
+Languages	Python, Bash, JavaScript, SQL
+Backend & web	FastAPI, Supabase, PostgreSQL, REST APIs, React, Vercel
+Networking	TCP/IP, DNS, VPCs, NAT, security groups
+Currently learning	Terraform, Kubernetes, AWS hands-on labs
+Certifications & training
+NVIDIA Deep Learning Institute: Building AI Agents with Multimodal Models (Nov 2026)
+Google: Introduction to AI (Apr 2026)
+Links
+LinkedIn: linkedin.com/in/alihvss
+GitHub: github.com/haliyu280-source
